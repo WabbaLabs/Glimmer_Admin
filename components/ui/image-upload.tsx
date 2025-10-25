@@ -49,7 +49,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
                     </div>
                 ))}
             </div>
-            <CldUploadWidget onUpload={onUpload} uploadPreset='cloud_tool'>
+            <CldUploadWidget onSuccess={onUpload} uploadPreset='cloud_tool'>
                 {({ open }) => {
                     const onClick = () => {
                         open();
